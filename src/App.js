@@ -76,7 +76,7 @@ function App() {
     setCartItems([...cartItems, pet])
   }
   let removeFromCart = (pet) => {
-    const indexVal = cartItems.findIndex(obj => obj.id === pet.id);
+    const indexVal = cartItems.findIndex(obj => obj.id == pet);
     cartItems.splice(indexVal, 1);
     setCartItems([...cartItems])
   }
